@@ -1,0 +1,99 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500&display=swap');
+
+  .typo-card {
+    background: #18181b;
+    border-radius: 12px;
+    padding: 36px 32px;
+    margin-bottom: 4px;
+    color: #e8ddd0;
+  }
+  .typo-card .label-tag {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #b8a898;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .typo-card .headline { line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 16px; }
+  .typo-card .body-sample { line-height: 1.8; color: rgba(232,221,208,0.6); font-size: 14px; }
+  .typo-card .pair-label { font-size: 11px; color: #b8a898; margin-top: 20px; display:flex; gap:8px; }
+  .tag { background: rgba(184,168,152,0.15); padding: 3px 10px; border-radius: 100px; }
+</style>
+
+<h2>Hvilken typografi-stemning passer bedst?</h2>
+<p class="subtitle">Samme farvepalette (Kul & Lin) — tre forskellige skriftpar</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="playfair" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;">
+      <div class="typo-card">
+        <span class="label-tag">Ejendomsrådgiver · Aarhus</span>
+        <div class="headline" style="font-family:'Playfair Display',serif; font-size:38px; font-weight:700; color:#e8ddd0;">
+          Din <em style="font-style:italic; font-weight:400; color:#b8a898;">rådgiver.</em>
+        </div>
+        <p class="body-sample" style="font-family:'DM Sans',sans-serif; font-weight:300;">
+          Ikke bare en mægler. En partner der er med dig fra første snak til nøglerne skifter hænder.
+        </p>
+        <div class="pair-label">
+          <span class="tag">Playfair Display</span>
+          <span style="color:rgba(184,168,152,0.5)">+</span>
+          <span class="tag">DM Sans</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Klassisk luksus</h3>
+      <p>Serif-overskrift med stor personlighed. Tænk Vogue eller The Economist — tidløs, autoritativ, elegant.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="cormorant" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;">
+      <div class="typo-card">
+        <span class="label-tag">Ejendomsrådgiver · Aarhus</span>
+        <div class="headline" style="font-family:'Cormorant Garamond',serif; font-size:46px; font-weight:300; color:#e8ddd0;">
+          Din <em style="font-style:italic; color:#b8a898;">rådgiver.</em>
+        </div>
+        <p class="body-sample" style="font-family:'Inter',sans-serif; font-weight:300; letter-spacing:0.01em;">
+          Ikke bare en mægler. En partner der er med dig fra første snak til nøglerne skifter hænder.
+        </p>
+        <div class="pair-label">
+          <span class="tag">Cormorant Garamond</span>
+          <span style="color:rgba(184,168,152,0.5)">+</span>
+          <span class="tag">Inter</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Højt magasin</h3>
+      <p>Meget slank, høj serif med masser af luft. Den mest "editorial" følelse — tænk arkitekturmagasin eller luksus-ejendomsprojekt.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="baskerville" onclick="toggleSelect(this)">
+    <div class="card-image" style="padding:0;">
+      <div class="typo-card">
+        <span class="label-tag">Ejendomsrådgiver · Aarhus</span>
+        <div class="headline" style="font-family:'Libre Baskerville',serif; font-size:34px; font-weight:700; color:#e8ddd0;">
+          Din <em style="font-style:italic; font-weight:400; color:#b8a898;">rådgiver.</em>
+        </div>
+        <p class="body-sample" style="font-family:'Outfit',sans-serif; font-weight:300; letter-spacing:0.005em;">
+          Ikke bare en mægler. En partner der er med dig fra første snak til nøglerne skifter hænder.
+        </p>
+        <div class="pair-label">
+          <span class="tag">Libre Baskerville</span>
+          <span style="color:rgba(184,168,152,0.5)">+</span>
+          <span class="tag">Outfit</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>Solid &amp; tillidsfuld</h3>
+      <p>Kraftfuld, klassisk serif med et moderne sans-serif. Mere jordbundet end Cormorant — troværdig, varm, professionel.</p>
+    </div>
+  </div>
+
+</div>

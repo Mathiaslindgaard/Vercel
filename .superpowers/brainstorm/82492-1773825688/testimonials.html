@@ -1,0 +1,99 @@
+<h2>Testimonials section style</h2>
+<p class="subtitle">Trust is key. How should client quotes be displayed?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1f2e;border-radius:8px;padding:24px;display:flex;flex-direction:column;gap:16px;">
+      <!-- Large single quote, full width -->
+      <div style="color:rgba(126,184,180,.25);font-size:64px;line-height:.8;font-family:serif;font-weight:700;">"</div>
+      <div style="color:#fff;font-size:15px;font-style:italic;font-family:serif;line-height:1.7;margin-top:-20px;">Roni er ikke bare en mægler — han er en rådgiver der rent faktisk holder dig i hånden hele vejen. Vi solgte 14% over prisforlangende.</div>
+      <div style="display:flex;align-items:center;gap:12px;margin-top:4px;">
+        <div style="width:36px;height:36px;border-radius:50%;background:rgba(126,184,180,.2);border:1.5px solid rgba(126,184,180,.3);flex-shrink:0;"></div>
+        <div>
+          <div style="color:#fff;font-size:12px;font-weight:600;font-family:sans-serif;">Mikkel & Sara Jensen</div>
+          <div style="color:rgba(255,255,255,.4);font-size:10px;">Solgt i Åbyhøj, 2024</div>
+        </div>
+        <div style="margin-left:auto;display:flex;gap:2px;">
+          <span style="color:#c9a96e;font-size:12px;">★★★★★</span>
+        </div>
+      </div>
+      <!-- nav dots -->
+      <div style="display:flex;gap:6px;justify-content:center;margin-top:4px;">
+        <div style="width:20px;height:3px;border-radius:2px;background:#7eb8b4;"></div>
+        <div style="width:6px;height:3px;border-radius:2px;background:rgba(255,255,255,.2);"></div>
+        <div style="width:6px;height:3px;border-radius:2px;background:rgba(255,255,255,.2);"></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Large single quote carousel</h3>
+      <p>One big quote at a time, full width, with dots to scroll through. Maximum impact per testimonial. Clean and airy.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1f2e;border-radius:8px;padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <!-- Two quote cards side by side -->
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(126,184,180,.15);border-radius:8px;padding:16px;">
+        <div style="color:rgba(126,184,180,.4);font-size:28px;font-family:serif;line-height:.8;margin-bottom:8px;">"</div>
+        <div style="color:rgba(255,255,255,.85);font-size:11px;font-style:italic;line-height:1.6;font-family:serif;margin-bottom:12px;">Vi solgte på 6 dage. Roni kendte markedet til fingerspidserne.</div>
+        <div style="color:#7eb8b4;font-size:9px;font-weight:600;letter-spacing:.05em;">Anna M. — Brabrand</div>
+        <div style="color:#c9a96e;font-size:10px;margin-top:4px;">★★★★★</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(126,184,180,.15);border-radius:8px;padding:16px;">
+        <div style="color:rgba(126,184,180,.4);font-size:28px;font-family:serif;line-height:.8;margin-bottom:8px;">"</div>
+        <div style="color:rgba(255,255,255,.85);font-size:11px;font-style:italic;line-height:1.6;font-family:serif;margin-bottom:12px;">Som førstegangskøber følte jeg mig aldrig alene. Han guidede os perfekt.</div>
+        <div style="color:#7eb8b4;font-size:9px;font-weight:600;letter-spacing:.05em;">Thomas K. — Åbyhøj</div>
+        <div style="color:#c9a96e;font-size:10px;margin-top:4px;">★★★★★</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1px solid rgba(126,184,180,.15);border-radius:8px;padding:16px;">
+        <div style="color:rgba(126,184,180,.4);font-size:28px;font-family:serif;line-height:.8;margin-bottom:8px;">"</div>
+        <div style="color:rgba(255,255,255,.85);font-size:11px;font-style:italic;line-height:1.6;font-family:serif;margin-bottom:12px;">Professionel, ærlig og resultatorienteret. Vi kan kun anbefale ham.</div>
+        <div style="color:#7eb8b4;font-size:9px;font-weight:600;letter-spacing:.05em;">Line & Søren — Aarhus V</div>
+        <div style="color:#c9a96e;font-size:10px;margin-top:4px;">★★★★★</div>
+      </div>
+      <div style="background:rgba(126,184,180,.08);border:1px solid rgba(126,184,180,.25);border-radius:8px;padding:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+        <div style="color:#7eb8b4;font-size:22px;font-weight:700;">4.9</div>
+        <div style="color:#c9a96e;font-size:12px;">★★★★★</div>
+        <div style="color:rgba(255,255,255,.4);font-size:9px;margin-top:4px;">Gennemsnit · 47 anmeldelser</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Grid of cards + rating summary</h3>
+      <p>3 quote cards in a grid with an average rating tile. Shows volume of trust at a glance. Slightly denser but very credible.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="C" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#1a1f2e;border-radius:8px;padding:24px;position:relative;overflow:hidden;">
+      <!-- Dark section with a big number + scrolling strip feel -->
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px;">
+        <div style="color:#fff;font-size:40px;font-weight:800;letter-spacing:-.04em;line-height:1;">4.9</div>
+        <div>
+          <div style="color:#c9a96e;font-size:14px;letter-spacing:.02em;">★★★★★</div>
+          <div style="color:rgba(255,255,255,.4);font-size:10px;margin-top:2px;">47 verified reviews</div>
+        </div>
+      </div>
+      <!-- horizontal scrolling strip -->
+      <div style="display:flex;gap:12px;overflow:hidden;">
+        <div style="min-width:160px;background:rgba(255,255,255,.04);border-left:2px solid #7eb8b4;padding:12px;border-radius:0 6px 6px 0;">
+          <div style="color:rgba(255,255,255,.85);font-size:10px;font-style:italic;font-family:serif;line-height:1.5;margin-bottom:8px;">"Solgt på 6 dage, over pris."</div>
+          <div style="color:rgba(255,255,255,.35);font-size:9px;">Anna M. · Brabrand</div>
+        </div>
+        <div style="min-width:160px;background:rgba(255,255,255,.04);border-left:2px solid rgba(126,184,180,.3);padding:12px;border-radius:0 6px 6px 0;">
+          <div style="color:rgba(255,255,255,.85);font-size:10px;font-style:italic;font-family:serif;line-height:1.5;margin-bottom:8px;">"Aldrig følte mig alene i processen."</div>
+          <div style="color:rgba(255,255,255,.35);font-size:9px;">Thomas K. · Åbyhøj</div>
+        </div>
+        <div style="min-width:160px;background:rgba(255,255,255,.04);border-left:2px solid rgba(126,184,180,.2);padding:12px;border-radius:0 6px 6px 0;">
+          <div style="color:rgba(255,255,255,.85);font-size:10px;font-style:italic;font-family:serif;line-height:1.5;margin-bottom:8px;">"Kan kun anbefale."</div>
+          <div style="color:rgba(255,255,255,.35);font-size:9px;">Line & Søren · Aarhus V</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Rating hero + scrolling strip</h3>
+      <p>Big 4.9 rating front and center, with compact quote cards in a horizontal scroll strip below. Fast to read, great for trust signals.</p>
+    </div>
+  </div>
+
+</div>
