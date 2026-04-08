@@ -98,20 +98,40 @@ document.querySelectorAll('[data-count]').forEach(el => {
 
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('.btn-submit');
     const original = btn.textContent;
-    btn.textContent = 'Sendt! ✓';
-    btn.style.background = 'var(--accent)';
-    btn.style.color = '#0D0A05';
+    btn.textContent = 'Sender...';
     btn.disabled = true;
-    setTimeout(() => {
-      btn.textContent = original;
-      btn.style.background = '';
-      btn.style.color = '';
+
+    try {
+      const res = await fetch('https://formspree.io/f/roni.ismail@danbolig.dk', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      });
+
+      if (res.ok) {
+        btn.textContent = 'Sendt! ✓';
+        btn.style.background = 'var(--accent)';
+        btn.style.color = '#0D0A05';
+        setTimeout(() => {
+          btn.textContent = original;
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.disabled = false;
+          form.reset();
+        }, 3000);
+      } else {
+        btn.textContent = 'Noget gik galt. Prøv igen.';
+        btn.disabled = false;
+        setTimeout(() => { btn.textContent = original; }, 3000);
+      }
+    } catch {
+      btn.textContent = 'Noget gik galt. Prøv igen.';
       btn.disabled = false;
-      form.reset();
-    }, 3000);
+      setTimeout(() => { btn.textContent = original; }, 3000);
+    }
   });
 }
