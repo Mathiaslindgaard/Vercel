@@ -468,24 +468,49 @@
 
 @media (max-width: 640px) {
   .page-hero-inner {
-    padding: 56px 20px 0;
+    padding: 48px 20px 0;
+    gap: 32px;
   }
 
-  .values-grid {
-    grid-template-columns: 1fr;
+  .page-hero-text h1 {
+    font-size: 2.25rem;
   }
 
+  .page-hero-photo {
+    height: 320px;
+  }
+
+  .story { padding: 80px 0; }
+  .story-grid { gap: 48px; }
+  .story-photo-secondary {
+    width: 40%;
+    bottom: -16px;
+    right: -8px;
+  }
+
+  .timeline { padding: 80px 0; }
   .timeline-item {
     grid-template-columns: 16px 1fr;
-    gap: 0 24px;
+    gap: 0 20px;
   }
 
+  .personal {
+    height: auto;
+    padding: 72px 0;
+  }
   .personal-content {
     padding: 0 20px;
   }
 
+  .about-cta { padding: 80px 0; }
   .about-cta-actions {
     flex-direction: column;
     align-items: center;
+  }
+  .about-cta-actions .btn-primary,
+  .about-cta-actions .btn-ghost {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
   }
 }

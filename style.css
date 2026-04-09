@@ -983,20 +983,30 @@ h3 {
 }
 
 @media (max-width: 640px) {
-  .container { padding: 0 24px; }
-  .nav-inner { padding: 0 24px; }
-  .hero-left { padding: 100px 24px 64px; }
-  .stats-inner { padding: 0 24px; flex-direction: column; }
-  .stat-divider { width: 100%; height: 1px; margin: 0; }
-  .advisor, .results, .testimonials, .contact { padding: 100px 0; }
-  .results-grid { grid-template-columns: 1fr; }
-  .result-card { border-right: none; border-bottom: 1px solid var(--border-subtle); }
-  .result-card:last-child { border-bottom: none; }
-  .contact-form { padding: 28px 20px; }
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; height: 60px; }
+  .nav-link { display: none; }
+  .nav-logo { font-size: 1.05rem; }
+  .nav-cta { padding: 8px 16px; font-size: 0.75rem; }
+
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 88px 20px 52px; }
+  .hero-right { height: 340px; }
+  .hero-photo { padding: 32px 28px 0; }
   .hero-actions { flex-direction: column; }
-  .btn-primary, .btn-ghost { text-align: center; justify-content: center; }
-  .testimonial-slide blockquote { font-size: 1.2rem; }
-  .footer-inner { flex-direction: column; gap: 14px; text-align: center; }
-  .results-header { margin-bottom: 48px; }
-  .atmosphere-photo-wrap { height: 440px; }
+  .btn-primary, .btn-ghost { text-align: center; justify-content: center; width: 100%; }
+
+  .advisor { padding: 80px 0; }
+  .advisor-photo-wrap { aspect-ratio: 3/2; max-height: 280px; }
+
+  .testimonials, .contact { padding: 80px 0; }
+  .contact-grid { gap: 40px; }
+  .contact-photo { max-height: 260px; margin-bottom: 24px; }
+  .contact-form { padding: 24px 18px; }
+  .btn-submit { width: 100%; text-align: center; }
+
+  .atmosphere-photo-wrap { height: 380px; }
+
+  .testimonial-slide blockquote { font-size: 1.15rem; }
+  .footer-inner { flex-direction: column; gap: 12px; text-align: center; }
 }
