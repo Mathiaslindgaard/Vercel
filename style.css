@@ -316,6 +316,15 @@ h3 {
   max-width: 400px;
 }
 
+.hero-sub--serif {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
 .hero-actions {
   display: flex;
   gap: 16px;
